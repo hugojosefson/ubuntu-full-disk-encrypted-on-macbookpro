@@ -75,6 +75,10 @@ In a terminal, issue these commands:
 
 You should see that `cryptsetup` is indeed included in the initrd image you just built.
 
+Leave the chroot:
+
+    exit
+
 ### refind
 
 To enable dual-boot, you should install `refind`:
