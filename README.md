@@ -8,7 +8,7 @@ This has been specifically tested on a MacBook Pro 10,1 (mid 2012) with the foll
   * Ubuntu 14.04 LTS (Trusty), alongside OSX 10.10 (Yosemite)
   * Ubuntu 14.10 (Utopic), alongside OSX 10.9 (Mavericks)
   * Ubuntu 14.10 (Utopic), alongside OSX 10.10 (Yosemite)
-  * Gnome Ubuntu 15.10 (Wily), alongside OSX 10.11 (El Capitan)
+  * Ubuntu GNOME 15.10 (Wily), alongside OSX 10.11 (El Capitan)
  
 It should work the same on many more Apple computers and OS versions.
 
