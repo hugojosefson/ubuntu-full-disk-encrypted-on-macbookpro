@@ -1,6 +1,6 @@
-# Full-disk encrypted Ubuntu, alongside MacOSX
+# Ubuntu full-disk encrypted, alongside MacOSX
 
-If you, like me, prefer to use Ubuntu on any hardware you use, this is for you.
+If you, like me, prefer to use Ubuntu on any hardware you use, and want it completely encrypted, this is for you.
 
 These are instructions on how to install Ubuntu 14.04 or later with full disk encryption, alongside MacOSX on a MacBook Pro.
 
