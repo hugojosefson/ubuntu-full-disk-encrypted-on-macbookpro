@@ -1,4 +1,4 @@
-# Install encrypted Ubuntu, alongside MacOSX
+# Full-disk encrypted Ubuntu, alongside MacOSX
 
 If you, like me, prefer to use Ubuntu on any hardware you use, this is for you.
 
