@@ -1,14 +1,16 @@
 # Install encrypted Ubuntu, alongside MacOSX
 
+If you, like me, prefer to use Ubuntu on any hardware you use, this is for you.
+
 These are instructions on how to install Ubuntu 14.04 or later with full disk encryption, alongside MacOSX on a MacBook Pro.
 
 This has been specifically tested on a MacBook Pro 10,1 (mid 2012) with the following OS combinations:
 
-  * Ubuntu 14.04 LTS (Trusty), alongside OSX 10.9 (Mavericks)
-  * Ubuntu 14.04 LTS (Trusty), alongside OSX 10.10 (Yosemite)
-  * Ubuntu 14.10 (Utopic), alongside OSX 10.9 (Mavericks)
-  * Ubuntu 14.10 (Utopic), alongside OSX 10.10 (Yosemite)
   * Ubuntu GNOME 15.10 (Wily), alongside OSX 10.11 (El Capitan)
+  * Ubuntu 14.10 (Utopic), alongside OSX 10.10 (Yosemite)
+  * Ubuntu 14.10 (Utopic), alongside OSX 10.9 (Mavericks)
+  * Ubuntu 14.04 LTS (Trusty), alongside OSX 10.10 (Yosemite)
+  * Ubuntu 14.04 LTS (Trusty), alongside OSX 10.9 (Mavericks)
  
 It should work the same on many more Apple computers and OS versions.
 
@@ -21,13 +23,17 @@ Boot up your existing OSX and run Disk Utility.
 
 Resize your existing OSX partition to make room for Ubuntu. Leave as much space as you want for Ubuntu, including your RAM size for swap. Remember that OSX counts gigabytes the way hard drive manufacturers do, and I and Ubuntu count the way computers do :) So make up to 10 % more room than it looks like you'll get, to be on the safe side.
 
-### Encrypt OSX (optional)
+### Encrypt OSX (recommended)
 
 If you want your shrunken OSX partition encrypted too, do that now with File Vault in System Preferences. If you try it after having installed Ubuntu alongside, File Vault will probably not let you. Let it finish encrypting and optimizing. Then reboot to check that everything is in order so far.
 
+### Create bootable USB
+
+Create an Ubuntu install USB using a 64bit image of your choice. Official instructions: [How to create a bootable USB stick on OS X](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx). Most Ubuntu images can be downloaded from [cdimage.ubuntu.com](http://cdimage.ubuntu.com/). I prefer the latest release of Ubuntu GNOME.
+
 ## Preparations in Ubuntu
 
-Create and boot up an Ubuntu install USB using a 64bit image of your choice. Official instructions: [How to create a bootable USB stick on OS X](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx)
+Boot up the Ubuntu install USB.
 
 Start `gparted` and create one small partition with ext4 labelled `/boot`. Create another large one, for encryption.
 
@@ -81,13 +87,13 @@ Leave the chroot:
 
 ### refind
 
-To enable dual-boot, you should install `refind`:
+To enable dual-boot, you can install `refind`:
 
 	sudo apt-add-repository ppa:rodsmith/refind
 	sudo apt-get update
 	sudo apt-get install -y efibootmgr refind
 	
-This should get your hard drive (SSD!?) set up for letting you choose operating system on boot.
+This should get your hard drive (SSD?!) set up for letting you choose operating system on boot.
 
 ## Done!
 
